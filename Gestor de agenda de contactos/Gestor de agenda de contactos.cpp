@@ -618,7 +618,89 @@ void bstMenu(const vector<Contact>& mainArray) {
 	}
 }
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// ---------- Main ----------
+int main() {
+	vector<Contact> mainArray;
+	vector<Operation> history;
+	vector<Contact> pending;
+
+	while (true) {
+
+		cout << "\n===== Gestor de Agenda =====\n";
+		cout << "1) Agregar un contacto (nombre, telefono, correo)\n";
+		cout << "2) Listar todos los contactos (por nombre o telefono)\n";
+		cout << "3) Buscar un contacto (por nombre o telefono)\n";
+		cout << "4) Eliminar un contacto seleccionado\n";
+		cout << "5) Historial de operaciones\n";
+		cout << "6) Cola de nuevos contactos pendientes\n";
+		cout << "7) Arbol de contactos (BST) y recorridos\n";
+		cout << "8) Salir\n";
+		cout << "Ingrese opcion: ";
+
+		string line;
+		getline(cin, line);
+		int option;
+
+		if (!parseIntNonNeg(line, option)) {
+
+			cout << "Opcion invalida. Intente nuevamente.\n";
+
+			waitEnter();
+			clearScreen();
+			continue;
+		}
+
+		switch (option) {
+
+		case 1:
+
+			addContact(mainArray, history);
+			break;
+
+		case 2:
+
+			listContactsMenu(mainArray);
+			break;
+
+		case 3:
+
+			searchContact(mainArray);
+			break;
+
+		case 4:
+
+			deleteContactMenu(mainArray, history);
+			break;
+
+		case 5:
+
+			showHistory(history);
+			break;
+
+		case 6:
+
+			pendingQueueMenu(pending, mainArray, history);
+			break;
+
+		case 7:
+
+			bstMenu(mainArray);
+			break;
+
+		case 8:
+
+			cout << "Saliendo... Hasta luego\n";
+			return 0;
+
+		default:
+
+			cout << "Opcion invalida.\n";
+			break;
+		}
+
+		waitEnter();
+		clearScreen();
+	}
+
+	return 0;
 }
