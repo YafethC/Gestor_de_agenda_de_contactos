@@ -1,10 +1,10 @@
 # Gestor_de_genda-de-Contactos
 
-Lenguaje en el que se desarrollo el sistema es en C++.
+# Lenguaje en el que se desarrollo el sistema es en C++.
 
-Descripcion: El sistema desarrollado es un Gestor de agenda de contactos, que permite registrar, buscar, mostrar y eliminar contactos. La información se almacenará en memoria (no es necesario guardar los datos en archivos o bases de datos). Cada vez que el programa se ejecute, se deberán ingresar nuevamente los datos.
+# Descripcion: El sistema desarrollado es un Gestor de agenda de contactos, que permite registrar, buscar, mostrar y eliminar contactos. La información se almacenará en memoria (no es necesario guardar los datos en archivos o bases de datos). Cada vez que el programa se ejecute, se deberán ingresar nuevamente los datos.
 
-Pasos para la instalacion y clonacion del repositorio:
+# Pasos para la instalacion y clonacion del repositorio:
 
 1. CLONAR EL REPOSITORIO
 Abre tu terminal, navega al directorio deseado y ejecuta:
@@ -33,8 +33,6 @@ make
 cd ..
 
 4. EJECUTAR EL PROGRAMA (Si la compilación fue exitosa)
-Sustituye [NOMBRE_DEL_EJECUTABLE] por el nombre del archivo de salida que se generó 
-(generalmente el nombre del proyecto o el especificado en CMakeLists.txt).
-./[NOMBRE_DEL_EJECUTABLE]
+Sustituye [NOMBRE_DEL_EJECUTABLE] por el nombre del archivo de salida que se generó (generalmente el nombre del proyecto o el especificado en CMakeLists.txt)../[NOMBRE_DEL_EJECUTABLE]
 
-Licencia MIT.
+# Licencia MIT.
