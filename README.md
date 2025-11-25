@@ -2,7 +2,8 @@
 
 # Lenguaje en el que se desarrollo el sistema es en C++.
 
-# Descripcion: El sistema desarrollado es un Gestor de agenda de contactos, que permite registrar, buscar, mostrar y eliminar contactos. La información se almacenará en memoria (no es necesario guardar los datos en archivos o bases de datos). Cada vez que el programa se ejecute, se deberán ingresar nuevamente los datos.
+# Descripcion: 
+El sistema desarrollado es un Gestor de agenda de contactos, que permite registrar, buscar, mostrar y eliminar contactos. La información se almacenará en memoria (no es necesario guardar los datos en archivos o bases de datos). Cada vez que el programa se ejecute, se deberán ingresar nuevamente los datos.
 
 # Pasos para la instalacion y clonacion del repositorio:
 
